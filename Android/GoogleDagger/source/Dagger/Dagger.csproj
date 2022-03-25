@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="MSBuild.Sdk.Extras">
   <PropertyGroup>
-    <TargetFrameworks>MonoAndroid90</TargetFrameworks>
+    <TargetFramework>net6.0-android31</TargetFramework>
     <IsBindingProject>true</IsBindingProject>
     <AssemblyName>Xamarin.Google.Dagger</AssemblyName>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
@@ -26,7 +26,7 @@
     <PackageProjectUrl>https://go.microsoft.com/fwlink/?linkid=2106537</PackageProjectUrl>
     <PackageLicenseUrl>https://go.microsoft.com/fwlink/?linkid=2106538</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageVersion>2.39.1.0</PackageVersion>
+    <PackageVersion>2.39.1.1</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -47,7 +47,7 @@
     <Compile Update="Additions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Javax.Inject" Version="1.0.0" />
+    <PackageReference Include="Xamarin.Javax.Inject" Version="1.0.0.2" />
   </ItemGroup>
 
 </Project>

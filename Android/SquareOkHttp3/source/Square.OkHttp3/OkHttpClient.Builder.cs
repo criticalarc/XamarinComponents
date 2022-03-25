@@ -9,12 +9,12 @@ namespace Square.OkHttp3
     {
         partial class Builder
         {
-            public Builder AddInterceptor(Func<IInterceptorChain, Response> interceptor)
+            public Builder AddInterceptor(Func<IInterceptor.IChain, Response> interceptor)
             {
                 return AddInterceptor(new InterceptorImpl(interceptor));
             }
 
-            public Builder AddNetworkInterceptor(Func<IInterceptorChain, Response> interceptor)
+            public Builder AddNetworkInterceptor(Func<IInterceptor.IChain, Response> interceptor)
             {
                 return AddNetworkInterceptor(new InterceptorImpl(interceptor));
             }
@@ -56,14 +56,14 @@ namespace Square.OkHttp3
 
             private class InterceptorImpl : Java.Lang.Object, IInterceptor
             {
-                private readonly Func<IInterceptorChain, Response> interceptor;
+                private readonly Func<IInterceptor.IChain, Response> interceptor;
 
-                public InterceptorImpl(Func<IInterceptorChain, Response> interceptor)
+                public InterceptorImpl(Func<IInterceptor.IChain, Response> interceptor)
                 {
                     this.interceptor = interceptor;
                 }
 
-                public Response Intercept(IInterceptorChain p0)
+                public Response Intercept(IInterceptor.IChain p0)
                 {
                     return interceptor(p0);
                 }

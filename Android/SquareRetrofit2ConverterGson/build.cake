@@ -1,6 +1,6 @@
 var TARGET = Argument ("t", Argument ("target", "ci"));
 
-var NUGET_VERSION = "2.9.0";
+var NUGET_VERSION = "2.9.0.1";
 
 var JAR_VERSION = "2.9.0";
 var JAR_URL = $"https://repo1.maven.org/maven2/com/squareup/retrofit2/converter-gson/{JAR_VERSION}/converter-gson-{JAR_VERSION}.jar";
