@@ -23,18 +23,16 @@
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>okhttp square square.okhttp xamarin android monodroid</PackageTags>
-    <PackageVersion>4.9.3.2</PackageVersion>
+    <PackageVersion>4.9.3.3</PackageVersion>
   </PropertyGroup>
   
   <ItemGroup>
-    <None Remove="Transforms\*.xml" />
-    <TransformFile Include="Transforms\*.xml" />
     <AndroidLibrary Include="..\..\externals\*.jar" Link="Jars\%(Filename)%(Extension)" />
     <AndroidLibrary Include="..\..\externals\*.aar" Link="Jars\%(Filename)%(Extension)" />
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Square.OkIO" Version="2.10.0.1" />
+    <PackageReference Include="Square.OkIO" Version="2.10.0.100" />
     <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.6.10" />
   </ItemGroup>
   

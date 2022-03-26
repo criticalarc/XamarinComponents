@@ -27,15 +27,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Mono.Android" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Transforms\*.xml" />
-    <TransformFile Include="Transforms\*.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <AndroidLibrary Include="..\..\externals\picasso.aar" Link="Jars\picasso.aar" />
   </ItemGroup>
 

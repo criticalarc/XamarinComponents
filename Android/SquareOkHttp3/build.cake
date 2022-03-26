@@ -1,6 +1,6 @@
 var TARGET = Argument ("t", Argument ("target", "ci"));
 
-string NUGET_VERSION = "4.9.3.2";
+string NUGET_VERSION = "4.9.3.3";
 string JAR_VERSION = "4.9.3";
 string JAR_URL = $"https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp/{JAR_VERSION}/okhttp-{JAR_VERSION}.jar";
 

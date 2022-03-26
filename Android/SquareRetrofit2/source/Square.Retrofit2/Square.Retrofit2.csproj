@@ -24,18 +24,16 @@
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>retrofit xamarin android monodroid</PackageTags>
-    <PackageVersion>2.9.0.1</PackageVersion>
+    <PackageVersion>2.9.0.2</PackageVersion>
   </PropertyGroup>
     
   <ItemGroup>
-    <PackageReference Include="Square.OkHttp3" Version="4.9.3.1" />
+    <PackageReference Include="Square.OkHttp3" Version="4.9.3.3" />
   </ItemGroup>
     
   <ItemGroup>
-    <None Remove="Transforms\*.xml" />
-    <TransformFile Include="Transforms\*.xml" />
-    <EmbeddedJar Include="..\..\externals\*.jar" Link="Jars\%(Filename)%(Extension)" />
-    <LibraryProjectZip Include="..\..\externals\*.aar" Link="Jars\%(Filename)%(Extension)" />
+    <AndroidLibrary Include="..\..\externals\*.jar" Link="Jars\%(Filename)%(Extension)" />
+    <AndroidLibrary Include="..\..\externals\*.aar" Link="Jars\%(Filename)%(Extension)" />
   </ItemGroup>
     
   <ItemGroup>

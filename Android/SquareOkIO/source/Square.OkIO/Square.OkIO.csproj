@@ -1,6 +1,6 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras">
   <PropertyGroup>
-    <TargetFrameworks>monoandroid9.0</TargetFrameworks>
+    <TargetFramework>net6.0-android31</TargetFramework>
     <IsBindingProject>true</IsBindingProject>
     <AssemblyName>Square.OkIO</AssemblyName>
     <RootNamespace>Square.OkIO</RootNamespace>
@@ -22,19 +22,17 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>okio square square.okio xamarin android monodroid</PackageTags>
     <PackageProjectUrl>https://go.microsoft.com/fwlink/?linkid=2130312</PackageProjectUrl>
-    <PackageVersion>2.10.0</PackageVersion>
+    <PackageVersion>2.10.0.100</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.4.32.1" PrivateAssets="None" />
-    <PackageReference Include="Xamarin.Kotlin.StdLib.Common" Version="1.4.32.1" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.6.10" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Common" Version="1.6.10" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Transforms\*.xml" />
-    <TransformFile Include="Transforms\*.xml" />
-    <EmbeddedJar Include="..\..\externals\*.jar" Link="Jars\%(Filename)%(Extension)" />
-    <LibraryProjectZip Include="..\..\externals\*.aar" Link="Jars\%(Filename)%(Extension)" />
+    <AndroidLibrary Include="..\..\externals\*.jar" Link="Jars\%(Filename)%(Extension)" />
+    <AndroidLibrary Include="..\..\externals\*.aar" Link="Jars\%(Filename)%(Extension)" />
   </ItemGroup>
 
   <ItemGroup>
