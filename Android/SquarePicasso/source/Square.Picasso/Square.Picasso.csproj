@@ -1,7 +1,7 @@
-﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>monoandroid9.0</TargetFrameworks>
+    <TargetFramework>net6.0-android31</TargetFramework>
     <IsBindingProject>true</IsBindingProject>
     <AssemblyName>Square.Picasso</AssemblyName>
     <RootNamespace>Square.Picasso</RootNamespace>
@@ -23,7 +23,7 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>picasso images xamarin android monodroid</PackageTags>
     <PackageProjectUrl>https://go.microsoft.com/fwlink/?linkid=2130312</PackageProjectUrl>
-    <PackageVersion>2.71828.0</PackageVersion>
+    <PackageVersion>2.8.0.1</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,7 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <LibraryProjectZip Include="..\..\externals\picasso.aar" Link="Jars\picasso.aar" />
+    <AndroidLibrary Include="..\..\externals\picasso.aar" Link="Jars\picasso.aar" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,9 +44,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Square.OkHttp3" Version="3.11.0" />
-    <PackageReference Include="Xamarin.Android.Support.Annotations" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.Exif" Version="28.0.0.3" />
+    <PackageReference Include="Square.OkHttp3" Version="4.9.3.2" />
+    <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.3.0.2" />
+    <PackageReference Include="Xamarin.AndroidX.ExifInterface" Version="1.3.3.4" />
   </ItemGroup>
 
 </Project>

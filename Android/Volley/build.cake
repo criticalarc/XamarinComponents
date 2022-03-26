@@ -1,12 +1,10 @@
 
-#load "../../common.cake"
-
 var TARGET = Argument ("t", Argument ("target", "Default"));
 
 var VOLLEY_VERSION = "1.1.1";
-var XAMARIN_FIX_VERSION = "1";
+var XAMARIN_FIX_VERSION = "101";
 var VOLLEY_NUGET_VERSION = $"{VOLLEY_VERSION}.{XAMARIN_FIX_VERSION}";
-var VOLLEY_URL = $"http://repo.spring.io/libs-release/com/android/volley/volley/{VOLLEY_VERSION}/volley-{VOLLEY_VERSION}.aar";
+var VOLLEY_URL = $"https://github.com/google/volley/releases/download/{VOLLEY_VERSION}/volley-{VOLLEY_VERSION}.aar";
 
 Task ("externals")
 	.WithCriteria (!FileExists ("./externals/volley.aar"))

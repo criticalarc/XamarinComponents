@@ -23,14 +23,14 @@
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>okhttp square square.okhttp xamarin android monodroid</PackageTags>
-    <PackageVersion>4.9.3.1</PackageVersion>
+    <PackageVersion>4.9.3.2</PackageVersion>
   </PropertyGroup>
   
   <ItemGroup>
     <None Remove="Transforms\*.xml" />
     <TransformFile Include="Transforms\*.xml" />
-    <EmbeddedJar Include="..\..\externals\*.jar" Link="Jars\%(Filename)%(Extension)" />
-    <LibraryProjectZip Include="..\..\externals\*.aar" Link="Jars\%(Filename)%(Extension)" />
+    <AndroidLibrary Include="..\..\externals\*.jar" Link="Jars\%(Filename)%(Extension)" />
+    <AndroidLibrary Include="..\..\externals\*.aar" Link="Jars\%(Filename)%(Extension)" />
   </ItemGroup>
   
   <ItemGroup>

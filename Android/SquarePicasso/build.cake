@@ -1,8 +1,8 @@
 var TARGET = Argument ("t", Argument ("target", "ci"));
 
-var NUGET_VERSION = "2.71828.0";
+var NUGET_VERSION = "2.8.0.1";
 
-var AAR_VERSION = "2.71828";
+var AAR_VERSION = "2.8";
 var AAR_URL = $"https://repo1.maven.org/maven2/com/squareup/picasso/picasso/{AAR_VERSION}/picasso-{AAR_VERSION}.aar";
 
 Task ("externals")
