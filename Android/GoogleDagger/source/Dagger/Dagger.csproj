@@ -2,6 +2,7 @@
 <Project Sdk="MSBuild.Sdk.Extras">
   <PropertyGroup>
     <TargetFramework>net6.0-android31</TargetFramework>
+    <SupportedOSPlatformVersion>23</SupportedOSPlatformVersion>
     <IsBindingProject>true</IsBindingProject>
     <AssemblyName>Xamarin.Google.Dagger</AssemblyName>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
@@ -26,21 +27,12 @@
     <PackageProjectUrl>https://go.microsoft.com/fwlink/?linkid=2106537</PackageProjectUrl>
     <PackageLicenseUrl>https://go.microsoft.com/fwlink/?linkid=2106538</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageVersion>2.39.1.1</PackageVersion>
+    <PackageVersion>2.39.1.3</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Transforms\*.xml" />
-    <TransformFile Include="Transforms\*.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedJar Include="..\..\externals\dagger.jar" Link="dagger.jar" />
+    <AndroidLibrary Include="..\..\externals\dagger.jar" Link="dagger.jar" />
     <None Include="..\..\External-Dependency-Info.txt" Pack="True" PackagePath="THIRD-PARTY-NOTICES.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Mono.Android" />
   </ItemGroup>
 
   <ItemGroup>

@@ -2,7 +2,7 @@
 var TARGET = Argument ("t", Argument ("target", "Default"));
 
 var VOLLEY_VERSION = "1.1.1";
-var XAMARIN_FIX_VERSION = "101";
+var XAMARIN_FIX_VERSION = "104";
 var VOLLEY_NUGET_VERSION = $"{VOLLEY_VERSION}.{XAMARIN_FIX_VERSION}";
 var VOLLEY_URL = $"https://github.com/google/volley/releases/download/{VOLLEY_VERSION}/volley-{VOLLEY_VERSION}.aar";
 

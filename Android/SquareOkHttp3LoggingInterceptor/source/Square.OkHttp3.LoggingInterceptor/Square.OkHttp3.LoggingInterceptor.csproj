@@ -1,6 +1,7 @@
-﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.23">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0-android31</TargetFramework>
+    <SupportedOSPlatformVersion>23</SupportedOSPlatformVersion>
     <IsBindingProject>true</IsBindingProject>
     <AssemblyName>Square.OkHttp3.LoggingInterceptor</AssemblyName>
     <RootNamespace>Square.OkHttp3.LoggingInterceptor</RootNamespace>
@@ -23,11 +24,11 @@
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>okhttp square square.okhttp xamarin android monodroid logging</PackageTags>
-    <PackageVersion>4.4.1.2</PackageVersion>
+    <PackageVersion>4.4.1.5</PackageVersion>
   </PropertyGroup>
     
   <ItemGroup>
-    <PackageReference Include="Square.OkHttp3" Version="4.9.3.3" />
+    <PackageReference Include="Square.OkHttp3" Version="4.9.3.5" />
   </ItemGroup>
     
   <ItemGroup>

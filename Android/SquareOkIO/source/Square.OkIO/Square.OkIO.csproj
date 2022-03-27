@@ -1,6 +1,7 @@
-﻿<Project Sdk="MSBuild.Sdk.Extras">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0-android31</TargetFramework>
+    <SupportedOSPlatformVersion>23</SupportedOSPlatformVersion>
     <IsBindingProject>true</IsBindingProject>
     <AssemblyName>Square.OkIO</AssemblyName>
     <RootNamespace>Square.OkIO</RootNamespace>
@@ -22,7 +23,7 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>okio square square.okio xamarin android monodroid</PackageTags>
     <PackageProjectUrl>https://go.microsoft.com/fwlink/?linkid=2130312</PackageProjectUrl>
-    <PackageVersion>2.10.0.100</PackageVersion>
+    <PackageVersion>2.10.0.102</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>

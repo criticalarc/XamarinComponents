@@ -1,6 +1,7 @@
-﻿<Project Sdk="MSBuild.Sdk.Extras">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0-android31</TargetFramework>
+    <SupportedOSPlatformVersion>23</SupportedOSPlatformVersion>
     <IsBindingProject>true</IsBindingProject>
     <AssemblyName>Square.Retrofit2.ConverterGson</AssemblyName>
     <RootNamespace>Square.Retrofit2.ConverterGson</RootNamespace>
@@ -23,12 +24,12 @@
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>gson retrofit xamarin android monodroid</PackageTags>
-    <PackageVersion>2.9.0.2</PackageVersion>
+    <PackageVersion>2.9.0.4</PackageVersion>
   </PropertyGroup>
     
   <ItemGroup>
     <PackageReference Include="GoogleGson" Version="2.9.0" />
-    <PackageReference Include="Square.Retrofit2" Version="2.9.0.2" />
+    <PackageReference Include="Square.Retrofit2" Version="2.9.0.4" />
   </ItemGroup>
     
   <ItemGroup>

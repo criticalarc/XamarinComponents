@@ -1,6 +1,6 @@
 var TARGET = Argument ("t", Argument ("target", "ci"));
 
-var NUGET_VERSION = "2.8.0.2";
+var NUGET_VERSION = "2.8.0.4";
 
 var AAR_VERSION = "2.8";
 var AAR_URL = $"https://repo1.maven.org/maven2/com/squareup/picasso/picasso/{AAR_VERSION}/picasso-{AAR_VERSION}.aar";

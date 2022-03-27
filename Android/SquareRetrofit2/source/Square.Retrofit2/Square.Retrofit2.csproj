@@ -1,6 +1,7 @@
-﻿<Project Sdk="MSBuild.Sdk.Extras/2.1.2">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0-android31</TargetFramework>
+    <SupportedOSPlatformVersion>23</SupportedOSPlatformVersion>
     <IsBindingProject>true</IsBindingProject>
     <AssemblyName>Square.Retrofit2</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -24,11 +25,11 @@
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>retrofit xamarin android monodroid</PackageTags>
-    <PackageVersion>2.9.0.2</PackageVersion>
+    <PackageVersion>2.9.0.4</PackageVersion>
   </PropertyGroup>
     
   <ItemGroup>
-    <PackageReference Include="Square.OkHttp3" Version="4.9.3.3" />
+    <PackageReference Include="Square.OkHttp3" Version="4.9.3.5" />
   </ItemGroup>
     
   <ItemGroup>
