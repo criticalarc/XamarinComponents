@@ -23,18 +23,16 @@
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>okhttp square square.okhttp xamarin android monodroid logging</PackageTags>
-    <PackageVersion>4.4.1.1</PackageVersion>
+    <PackageVersion>4.4.1.2</PackageVersion>
   </PropertyGroup>
     
   <ItemGroup>
-    <PackageReference Include="Square.OkHttp3" Version="4.9.3.1" />
+    <PackageReference Include="Square.OkHttp3" Version="4.9.3.3" />
   </ItemGroup>
     
   <ItemGroup>
-    <None Remove="Transforms\*.xml" />
-    <TransformFile Include="Transforms\*.xml" />
-    <EmbeddedJar Include="..\..\externals\*.jar" Link="Jars\%(Filename)%(Extension)" />
-    <LibraryProjectZip Include="..\..\externals\*.aar" Link="Jars\%(Filename)%(Extension)" />
+    <AndroidLibrary Include="..\..\externals\*.jar" Link="Jars\%(Filename)%(Extension)" />
+    <AndroidLibrary Include="..\..\externals\*.aar" Link="Jars\%(Filename)%(Extension)" />
   </ItemGroup>
     
   <ItemGroup>
